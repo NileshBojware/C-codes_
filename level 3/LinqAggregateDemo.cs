@@ -1,0 +1,15 @@
+using System;
+using System.Linq;
+
+namespace LINQPrograms
+{
+    class LinqAggregateDemo
+    {
+        static void Main()
+        {
+            int[] nums = {1,2,3,4};
+            int sum = nums.Aggregate((a,b)=>a+b);
+            Console.WriteLine(sum);
+        }
+    }
+}
